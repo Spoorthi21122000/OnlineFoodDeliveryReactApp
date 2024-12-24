@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import MealItems from './MealItems.jsx'
+import CartContext from '../store/CartContext.jsx';
 export default function Meals() {
     const [loadedMeals, setLoadedMeals] = useState([]);
     useEffect(() => {

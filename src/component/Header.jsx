@@ -5,7 +5,6 @@ import CartContext from '../store/CartContext'
 
 export default function Header(){
     const cartCtx = useContext(CartContext)
-
     const totalCartItems = cartCtx.items.reduce((totalNumbrofItems, item) => {
         return totalNumbrofItems + item.quantity;
     }, 0)
@@ -19,6 +18,5 @@ export default function Header(){
                 <Button textOnly>CART ({totalCartItems})</Button>
             </nav>
         </header>
-        
     )
 }
